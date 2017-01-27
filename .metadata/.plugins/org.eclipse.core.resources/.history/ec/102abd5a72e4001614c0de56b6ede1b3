@@ -1,0 +1,7 @@
+package edu.ap.rest;
+
+import org.restlet.resource.ServerResource;
+
+public class MedicijnResource extends ServerResource {
+
+}

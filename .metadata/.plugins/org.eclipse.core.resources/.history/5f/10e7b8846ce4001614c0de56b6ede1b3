@@ -1,0 +1,13 @@
+package edu.ap.rest;
+
+import org.restlet.resource.Get;
+import org.restlet.resource.ServerResource;
+
+public class MedicijnenResource extends ServerResource {
+	private static final String FILENAME = "C:/Users/HP/Desktop/medicijnen.json";
+	
+	@Get("txt")
+	public String getMedicijnen() {
+		return "";
+	}
+}

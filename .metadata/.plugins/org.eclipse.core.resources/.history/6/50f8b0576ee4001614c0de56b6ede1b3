@@ -1,0 +1,35 @@
+package edu.ap.json;
+
+import java.util.ArrayList;
+
+public class JSONParser {
+	private static final String FILENAME = "C:/Users/HP/Desktop/medicijnen.json";
+	
+	public static ArrayList<String> getMedicijnen(String naammedicijn) {
+		
+		/*ArrayList<String> quotesWithWord = new ArrayList<>();
+		
+		for (String quote : allQuotes()){
+			if (quote.contains(searchword)) {
+				quotesWithWord.add(quote);
+			}
+		}
+		return quotesWithWord;*/
+		
+		ArrayList<String> MedicijnVanWoord = new ArrayList<>();
+
+		
+		for (String quote : allQuotes()){
+			String[] woordenLijst = quote.split(" ");
+			for(String woord : woordenLijst){
+				if (woord.equals(searchword) && !(quotesWithWord.contains(quote))) {
+					
+					quotesWithWord.add(quote);
+				}
+			}
+		}
+		return quotesWithWord;
+	}
+	
+	public static String[] allMedicijnen
+}

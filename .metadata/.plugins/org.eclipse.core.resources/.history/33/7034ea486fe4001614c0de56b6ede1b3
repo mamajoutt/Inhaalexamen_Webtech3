@@ -1,0 +1,50 @@
+package edu.ap.json;
+
+import java.io.FileReader;
+import java.util.ArrayList;
+
+import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class JSONFactory {
+	private static final String FILENAME = "C:/Users/HP/Desktop/medicijnen.json";
+	
+	public static ArrayList<String> getMedicijn(String naammedicijn) {
+		try {
+			FileReader reader = new FileReader(FILENAME);
+			JSONParser parser = new JSONParser();
+			JSONObject jsonObject = (JSONObject)parser.parse(reader);
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		/*ArrayList<String> quotesWithWord = new ArrayList<>();
+		
+		for (String quote : allQuotes()){
+			if (quote.contains(searchword)) {
+				quotesWithWord.add(quote);
+			}
+		}
+		return quotesWithWord;*/
+		
+		ArrayList<String> MedicijnVanWoord = new ArrayList<>();
+
+		
+		for (String quote : allQuotes()){
+			String[] woordenLijst = quote.split(" ");
+			for(String woord : woordenLijst){
+				if (woord.equals(searchword) && !(quotesWithWord.contains(quote))) {
+					
+					quotesWithWord.add(quote);
+				}
+			}
+		}
+		return quotesWithWord;
+	}
+	
+	public static String[] allMedicijnen(){
+		
+	}
+}

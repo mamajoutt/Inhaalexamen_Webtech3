@@ -1,0 +1,10 @@
+package edu.ap.rest;
+
+public class MedicijnClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

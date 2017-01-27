@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;edu.ap.json.JSONParser.java&apos; to &apos;JSONFactory.java&apos;&#x0D;&#x0A;- Original project: &apos;Vraag2&apos;&#x0D;&#x0A;- Original element: &apos;edu.ap.json.JSONParser.java&apos;&#x0D;&#x0A;- Renamed element: &apos;edu.ap.json.JSONFactory.java&apos;" description="Rename compilation unit &apos;JSONParser.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;edu.ap.json{JSONParser.java" name="JSONFactory.java" references="false" stamp="1485507623147" version="1.0"/>
+</session>

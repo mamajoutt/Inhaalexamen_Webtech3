@@ -178,3 +178,137 @@ Binding(CTRL+.,
 
 !ENTRY org.eclipse.jface.text 2 0 2017-01-27 08:57:22.820
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-01-27 09:55:18.449
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_111\lib\rt.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\Vraag2\java-json.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\Vraag2\org.restlet.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-01-27 09:59:08.705
+!MESSAGE Full project indexing required:
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\Vraag2\json-simple-1.1.1.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1662)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1652)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1486)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1462)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2074)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5521)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:105)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:118)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-27 10:57:08.514
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-27 10:57:08.525
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-27 11:11:01.723
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-27 11:11:01.729
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-01-27 11:13:18.267
+!MESSAGE Full project indexing required:
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\annotations-api.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\catalina-ant.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\catalina-ha.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\catalina-storeconfig.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\catalina-tribes.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\catalina.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\ecj-4.5.1.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\el-api.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\jasper-el.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\jasper.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\jsp-api.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\servlet-api.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-api.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-coyote.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-dbcp.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-i18n-es.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-i18n-fr.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-i18n-ja.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-jdbc.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-jni.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-util-scan.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-util.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\tomcat-websocket.jar
+  [+] C:\Users\HP\Desktop\Inhaalexamen_Webtech3\apache-tomcat-8.0.41\apache-tomcat-8.0.41\lib\websocket-api.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1662)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1652)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1486)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1462)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2074)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsPropertyPage$5.run(FacetsPropertyPage.java:246)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
