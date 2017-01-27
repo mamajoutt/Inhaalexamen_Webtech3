@@ -1,0 +1,7 @@
+Waarom kunnen REST en SOAP eigenlijk niet met elkaar vergeleken worden, maw wat is het fundamentele verschil tussen beiden?
+
+REST is volledig stateless. Rest maakt dus geen gebruik van cookies. 
+Navigatie wordt meegestuurd met de URL parameters. 
+Iedere call staat dus los van het vorige. Dit laat server en caching toe.
+IN REST WERK JE VOORAL MET REQUESTHEADERS.
+ALLES IS EEN RESOURCE IN REST IPV BIJ GEBRUIK JE METHODENAMEN.
