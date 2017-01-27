@@ -1,0 +1,14 @@
+127.0.0.1 - - [27/Jan/2017:09:24:44 +0100] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [27/Jan/2017:09:24:45 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Result.jsp HTTP/1.1" 200 118
+127.0.0.1 - - [27/Jan/2017:09:24:46 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Method.jsp HTTP/1.1" 200 519
+127.0.0.1 - - [27/Jan/2017:09:24:46 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Input.jsp HTTP/1.1" 200 127
+127.0.0.1 - - [27/Jan/2017:09:24:46 +0100] "GET /Vraag1Client/sampleRegistratieProxy/TestClient.jsp HTTP/1.1" 200 586
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:46 +0100] "GET /Vraag1Client/sampleRegistratieProxy/TestClient.jsp HTTP/1.1" 200 586
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:46 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Method.jsp HTTP/1.1" 200 519
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:46 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Input.jsp HTTP/1.1" 200 127
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:47 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Result.jsp? HTTP/1.1" 200 118
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:49 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Input.jsp?method=15 HTTP/1.1" 200 432
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:52 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Input.jsp?method=20 HTTP/1.1" 200 296
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:54 +0100] "GET /Vraag1Client/sampleRegistratieProxy/Input.jsp?method=20 HTTP/1.1" 200 296
+127.0.0.1 - - [27/Jan/2017:09:24:55 +0100] "POST /Vraag1/services/Registratie HTTP/1.0" 200 477
+0:0:0:0:0:0:0:1 - - [27/Jan/2017:09:24:55 +0100] "POST /Vraag1Client/sampleRegistratieProxy/Result.jsp HTTP/1.1" 200 216

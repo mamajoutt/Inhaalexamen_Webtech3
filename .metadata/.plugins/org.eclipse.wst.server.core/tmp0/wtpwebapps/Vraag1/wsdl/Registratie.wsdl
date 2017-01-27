@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.ap.edu" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.ap.edu" xmlns:intf="http://ws.ap.edu" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://ws.ap.edu" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="addRegistratie">
+    <complexType>
+     <sequence>
+      <element name="xml" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addRegistratieResponse">
+    <complexType>
+     <sequence>
+      <element name="addRegistratieReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getRegistraties">
+    <complexType/>
+   </element>
+   <element name="getRegistratiesResponse">
+    <complexType>
+     <sequence>
+      <element name="getRegistratiesReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="addRegistratieResponse">
+
+      <wsdl:part element="impl:addRegistratieResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getRegistratiesRequest">
+
+      <wsdl:part element="impl:getRegistraties" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addRegistratieRequest">
+
+      <wsdl:part element="impl:addRegistratie" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getRegistratiesResponse">
+
+      <wsdl:part element="impl:getRegistratiesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Registratie">
+
+      <wsdl:operation name="addRegistratie">
+
+         <wsdl:input message="impl:addRegistratieRequest" name="addRegistratieRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:addRegistratieResponse" name="addRegistratieResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getRegistraties">
+
+         <wsdl:input message="impl:getRegistratiesRequest" name="getRegistratiesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getRegistratiesResponse" name="getRegistratiesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="RegistratieSoapBinding" type="impl:Registratie">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="addRegistratie">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="addRegistratieRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="addRegistratieResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getRegistraties">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getRegistratiesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getRegistratiesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="RegistratieService">
+
+      <wsdl:port binding="impl:RegistratieSoapBinding" name="Registratie">
+
+         <wsdlsoap:address location="http://localhost:8080/Vraag1/services/Registratie"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
