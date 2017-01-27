@@ -3,4 +3,7 @@
 	<list key="org.eclipse.jst.ws.internal.consumption.ui.widgets.test.ClientTestWidget.sampleFolderText_">
 		<item value="sampleRegistratieProxy"/>
 	</list>
+	<list key="org.eclipse.jst.ws.client.type.java">
+		<item value="/Vraag1/WebContent/wsdl/Registratie.wsdl"/>
+	</list>
 </section>

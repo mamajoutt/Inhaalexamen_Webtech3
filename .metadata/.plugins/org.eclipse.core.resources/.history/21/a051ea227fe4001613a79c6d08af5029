@@ -1,0 +1,85 @@
+package edu.ap.ws;
+
+import org.w3c.dom.*;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import org.xml.sax.InputSource;
+
+import java.io.*;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+public class Registratie {
+	private String INPUTFILE = "C:/Users/HP/Desktop/registraties.xml";
+	
+	public String getRegistraties(){
+		File inputFile = new File(INPUTFILE);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder;
+        
+		try {
+			dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(inputFile);
+	        doc.getDocumentElement().normalize();
+	        String result = "<h2>Registraties</h2>";
+	        
+	        NodeList registratie = doc.getElementsByTagName("registratie");
+
+	        for (int i = 0; i < registratie.getLength(); i++) {
+	        	 Node nNode = registratie.item(i);
+	        	 Element eElement = (Element) nNode;
+	        	 
+	        	 result += "<br/><b>Datum van interventie: </b>" + eElement.getAttribute("interventiedatum");
+	        	 result += "<br/><b>Naam van patient: </b>" + eElement.getAttribute("naamvanpatient");
+	        	 result += "<br/><b>Geboortedatum van patient: </b>" + eElement.getAttribute("geboortedatumvanpatient");
+	        	 result += "<br/><b>Verpleegkundige : </b>" + eElement.getAttribute("verpleegkundige");
+	        	 result += "<br/><b>Allergieën : </b>" + eElement.getAttribute("allergieen");
+	        	 result += "<br/><b>Diagnose : </b>" + eElement.getAttribute("diagnose");
+	        	 result += "<br/>";
+	        }
+
+	        return result;
+		} 
+		catch (Exception e) {
+			return "ERROR" + e.getMessage();
+		}
+	}
+	
+	public String addRegistratie(String xml){
+		File inputFile = new File(INPUTFILE);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        // set validating false to enable copying
+        // node from one document to another
+        dbFactory.setValidating(false);
+        DocumentBuilder dBuilder;
+        
+		try {
+			dBuilder = dbFactory.newDocumentBuilder();
+			Document doc1 = dBuilder.parse(inputFile);
+	        Document doc2 = dBuilder.parse(new InputSource(new StringReader(xml)));
+	        Element element = (Element) doc2.getDocumentElement();
+	        // imports a node from doc2 document to doc1, without altering
+	        // or removing the source node from the original document
+	        Node copiedNode = doc1.importNode(element, true);
+	        // adds the node to the end of the list of children of this node
+	        doc1.getDocumentElement().appendChild(copiedNode);
+	        
+	        // write the new document to file
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
+			Transformer transformer = transformerFactory.newTransformer();
+			DOMSource source = new DOMSource(doc1);
+			StreamResult result = new StreamResult(new File(INPUTFILE));
+			transformer.transform(source, result);
+	        
+	        return this.getRegistraties();
+		} 
+		catch (Exception e) {
+			return e.getMessage();
+		}
+	}
+
+}

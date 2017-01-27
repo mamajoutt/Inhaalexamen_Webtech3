@@ -37,7 +37,7 @@ public class Registratie {
 	        	 result += "<br/><b>Naam van patient: </b>" + eElement.getAttribute("naamvanpatient");
 	        	 result += "<br/><b>Geboortedatum van patient: </b>" + eElement.getAttribute("geboortedatumvanpatient");
 	        	 result += "<br/><b>Verpleegkundige : </b>" + eElement.getAttribute("verpleegkundige");
-	        	 result += "<br/><b>Allergieën : </b>" + eElement.getAttribute("allergieen");
+	        	 result += "<br/><b>AllergieÃ«n : </b>" + eElement.getAttribute("allergieen");
 	        	 result += "<br/><b>Diagnose : </b>" + eElement.getAttribute("diagnose");
 	        	 result += "<br/>";
 	        }

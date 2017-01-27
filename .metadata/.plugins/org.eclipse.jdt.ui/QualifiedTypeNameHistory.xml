@@ -28,4 +28,6 @@
 <fullyQualifiedTypeName name="org.restlet.resource.ClientResource"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="javax.xml.ws.WebServiceRef"/>
+<fullyQualifiedTypeName name="edu.ap.ws.RegistratieProxy"/>
 </qualifiedTypeNameHistroy>
